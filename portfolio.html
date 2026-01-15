@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Malik Sami — Frontend Developer (HTML, CSS, JavaScript, React) and Backend (Node.js)." />
+    <title>Malik Sami | Portfolio</title>
+
+    <meta name="theme-color" content="#0b1224" />
+    <meta name="background-color" content="#070b14" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__name">Malik Sami</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#contact">Contact</a>
+          <div class="social" aria-label="Social links">
+            <a class="social__link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.02c-3.22.7-3.9-1.38-3.9-1.38-.52-1.31-1.27-1.66-1.27-1.66-1.04-.7.08-.69.08-.69 1.15.08 1.75 1.16 1.75 1.16 1.02 1.72 2.68 1.22 3.34.93.1-.72.4-1.22.72-1.5-2.57-.29-5.27-1.27-5.27-5.68 0-1.25.46-2.28 1.2-3.08-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.2 11.2 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.8 1.2 1.83 1.2 3.08 0 4.42-2.7 5.39-5.28 5.67.41.36.78 1.07.78 2.16v3.2c0 .31.21.67.79.56A11.5 11.5 0 0 0 12 .5Z"/>
+              </svg>
+            </a>
+            <a class="social__link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M20.45 20.45h-3.55v-5.56c0-1.33-.03-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.65H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.56V9h3.55v11.45ZM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0Z"/>
+              </svg>
+            </a>
+          </div>
+          <a class="btn btn--primary" href="#contact">Hire Me</a>
+        </nav>
+
+        <button class="iconbtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel">
+          <span class="iconbtn__lines" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="navpanel" id="navPanel" hidden>
+        <div class="container navpanel__inner">
+          <a class="navpanel__link" href="#about">About</a>
+          <a class="navpanel__link" href="#skills">Skills</a>
+          <a class="navpanel__link" href="#projects">Projects</a>
+          <a class="navpanel__link" href="#contact">Contact</a>
+          <a class="btn btn--primary btn--block" href="#contact">Hire Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Introduction">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <div class="kicker">Portfolio</div>
+            <h1 class="hero__title">
+              Hi, I’m <span class="accent">Malik Sami</span>.
+              <span class="hero__title2">I build modern websites & apps.</span>
+            </h1>
+            <p class="hero__subtitle">
+              Frontend: HTML, CSS, JavaScript, React. Backend: Node.js.
+              I focus on clean UI, responsive design, and fast performance.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" href="#contact">Contact</a>
+            </div>
+
+            <div class="chips" aria-label="Key skills">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </div>
+
+          <div class="hero__card" aria-hidden="true">
+            <div class="glass">
+              <div class="glass__top">
+                <div class="dot dot--r"></div>
+                <div class="dot dot--y"></div>
+                <div class="dot dot--g"></div>
+              </div>
+
+              <div class="glass__body">
+                <div class="metric">
+                  <div class="metric__k">Focus</div>
+                  <div class="metric__v">UI • UX • Performance</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__k">Stack</div>
+                  <div class="metric__v">React + Node.js</div>
+                </div>
+                <div class="metric">
+                  <div class="metric__k">Available</div>
+                  <div class="metric__v">Freelance / Remote</div>
+                </div>
+
+                <div class="bars" aria-hidden="true">
+                  <div class="bar"><span style="width: 92%"></span></div>
+                  <div class="bar"><span style="width: 84%"></span></div>
+                  <div class="bar"><span style="width: 76%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">About</h2>
+            <p class="section__desc">
+              I’m Malik Sami, a web developer who enjoys building modern, responsive websites.
+              I like turning ideas into real products with clean design and solid code.
+            </p>
+          </div>
+
+          <div class="grid2">
+            <div class="panel">
+              <h3 class="panel__title">What I do</h3>
+              <p class="panel__text">Landing pages, portfolios, business websites, dashboards, and web apps.</p>
+              <div class="list">
+                <div class="list__item">Responsive UI design</div>
+                <div class="list__item">Reusable components (React)</div>
+                <div class="list__item">REST APIs (Node.js)</div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title">Tools I use</h3>
+              <p class="panel__text">A simple, productive workflow to ship fast and keep code maintainable.</p>
+              <div class="toolgrid" aria-label="Tools">
+                <div class="tool">VS Code</div>
+                <div class="tool">Git</div>
+                <div class="tool">Chrome DevTools</div>
+                <div class="tool">Figma</div>
+                <div class="tool">Postman</div>
+                <div class="tool">Vite</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="skills">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Skills</h2>
+            <p class="section__desc">My core skills and the technologies I work with.</p>
+          </div>
+
+          <div class="skillgrid">
+            <article class="skill">
+              <div class="skill__top">
+                <div class="skill__icon skill__icon--blue" aria-hidden="true">&lt;/&gt;</div>
+                <div>
+                  <div class="skill__name">HTML</div>
+                  <div class="skill__meta">Semantic markup</div>
+                </div>
+              </div>
+              <div class="progress"><span style="width: 92%"></span></div>
+            </article>
+
+            <article class="skill">
+              <div class="skill__top">
+                <div class="skill__icon skill__icon--cyan" aria-hidden="true">#</div>
+                <div>
+                  <div class="skill__name">CSS</div>
+                  <div class="skill__meta">Responsive design</div>
+                </div>
+              </div>
+              <div class="progress"><span style="width: 88%"></span></div>
+            </article>
+
+            <article class="skill">
+              <div class="skill__top">
+                <div class="skill__icon skill__icon--yellow" aria-hidden="true">JS</div>
+                <div>
+                  <div class="skill__name">JavaScript</div>
+                  <div class="skill__meta">Modern ES6+</div>
+                </div>
+              </div>
+              <div class="progress"><span style="width: 85%"></span></div>
+            </article>
+
+            <article class="skill">
+              <div class="skill__top">
+                <div class="skill__icon skill__icon--purple" aria-hidden="true">⚛</div>
+                <div>
+                  <div class="skill__name">React</div>
+                  <div class="skill__meta">Components & hooks</div>
+                </div>
+              </div>
+              <div class="progress"><span style="width: 78%"></span></div>
+            </article>
+
+            <article class="skill">
+              <div class="skill__top">
+                <div class="skill__icon skill__icon--green" aria-hidden="true">⬢</div>
+                <div>
+                  <div class="skill__name">Node.js</div>
+                  <div class="skill__meta">Backend & APIs</div>
+                </div>
+              </div>
+              <div class="progress"><span style="width: 72%"></span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Projects</h2>
+            <p class="section__desc">Replace these placeholders with your real projects anytime.</p>
+          </div>
+
+          <div class="projectgrid">
+            <article class="project">
+              <div class="project__badge">Frontend</div>
+              <h3 class="project__title">Landing Page</h3>
+              <p class="project__desc">A responsive landing page with animations and clean layout.</p>
+              <div class="project__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project__links">
+                <a class="plink" href="#" aria-disabled="true">Live</a>
+                <a class="plink" href="#" aria-disabled="true">Code</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__badge">React</div>
+              <h3 class="project__title">Todo App</h3>
+              <p class="project__desc">A simple app with filters, local storage, and reusable components.</p>
+              <div class="project__tags">
+                <span class="tag">React</span>
+                <span class="tag">Hooks</span>
+                <span class="tag">UI</span>
+              </div>
+              <div class="project__links">
+                <a class="plink" href="#" aria-disabled="true">Live</a>
+                <a class="plink" href="#" aria-disabled="true">Code</a>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__badge">Backend</div>
+              <h3 class="project__title">REST API</h3>
+              <p class="project__desc">Node.js API with CRUD endpoints and validation.</p>
+              <div class="project__tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">REST</span>
+              </div>
+              <div class="project__links">
+                <a class="plink" href="#" aria-disabled="true">Docs</a>
+                <a class="plink" href="#" aria-disabled="true">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="contact">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__desc">Send me a message. I’ll reply as soon as possible.</p>
+          </div>
+
+          <div class="grid2">
+            <div class="panel">
+              <h3 class="panel__title">Contact details</h3>
+              <div class="contact">
+                <a class="contact__item" href="mailto:your-email@example.com">your-email@example.com</a>
+                <a class="contact__item" href="tel:+920000000000">+92 000 000 0000</a>
+                <div class="contact__item">Multan, Pakistan</div>
+              </div>
+              <div class="note">Update email/phone in the HTML to your real details.</div>
+            </div>
+
+            <form class="form" id="contactForm">
+              <label class="field">
+                <span class="field__label">Name</span>
+                <input class="field__input" name="name" placeholder="Your name" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Email</span>
+                <input class="field__input" type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label class="field">
+                <span class="field__label">Message</span>
+                <textarea class="field__input field__input--area" name="message" placeholder="Write your message..." required></textarea>
+              </label>
+              <button class="btn btn--primary btn--block" type="submit">Send Message</button>
+              <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="toTop" id="toTop" type="button" aria-label="Scroll to top" hidden>
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">Malik Sami</div>
+          <div class="footer__small">Built with HTML, CSS and JavaScript.</div>
+        </div>
+        <div class="footer__right">
+          <a class="footer__link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="footer__link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="footer__link" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>

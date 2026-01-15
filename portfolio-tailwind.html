@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Malik Sami — Frontend Developer (HTML, CSS, JavaScript, React) and Backend (Node.js)." />
+    <title>Malik Sami | Portfolio (Tailwind)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Arial'] },
+            colors: {
+              bg: '#070b14',
+              bg2: '#0b1224'
+            },
+            boxShadow: {
+              glow: '0 20px 60px rgba(0,0,0,.55)'
+            }
+          }
+        }
+      };
+    </script>
+
+    <style>
+      html { background: #070b14; }
+      .noise {
+        background-image: radial-gradient(rgba(255,255,255,.12) 1px, transparent 1px);
+        background-size: 42px 42px;
+        opacity: .14;
+        transform: rotate(6deg);
+      }
+      .blob {
+        filter: blur(60px);
+        opacity: .18;
+        animation: float 12s cubic-bezier(.2,.9,.2,1) infinite;
+      }
+      .blob2 { animation-duration: 14s; }
+      @keyframes float {
+        0%,100% { transform: translate3d(0,0,0) scale(1); }
+        50% { transform: translate3d(20px, 18px, 0) scale(1.03); }
+      }
+    </style>
+  </head>
+
+  <body class="font-sans text-slate-100 bg-bg">
+    <a class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-xl focus:bg-white focus:px-3 focus:py-2 focus:text-black" href="#main">
+      Skip to content
+    </a>
+
+    <div class="pointer-events-none fixed inset-0 -z-10">
+      <div class="absolute -left-40 -top-40 h-[520px] w-[520px] rounded-full blob" style="background: radial-gradient(circle at 30% 30%, rgba(91,140,255,.9), transparent 58%);"></div>
+      <div class="absolute -right-44 -bottom-44 h-[520px] w-[520px] rounded-full blob blob2" style="background: radial-gradient(circle at 30% 30%, rgba(99,230,255,.75), transparent 58%);"></div>
+      <div class="absolute inset-0 noise"></div>
+      <div class="absolute inset-0" style="background: radial-gradient(900px 520px at 15% 0%, rgba(91,140,255,.22), transparent 62%), radial-gradient(900px 520px at 85% 10%, rgba(99,230,255,.14), transparent 60%), radial-gradient(700px 420px at 50% 100%, rgba(214,173,58,.10), transparent 60%), linear-gradient(180deg, #070b14 0%, #05070e 100%);"></div>
+    </div>
+
+    <header class="sticky top-0 z-50 border-b border-white/10 backdrop-blur-xl" style="background: radial-gradient(700px 240px at 20% 0%, rgba(91,140,255,.20), transparent 55%), radial-gradient(700px 240px at 80% 0%, rgba(214,173,58,.12), transparent 60%), rgba(7,11,20,.86);">
+      <div class="mx-auto flex w-[min(1100px,calc(100%-40px))] items-center justify-between gap-4 py-4">
+        <a class="flex items-center gap-2 font-extrabold tracking-tight" href="#top" aria-label="Go to top">
+          <span class="h-3 w-3 rounded-full" style="background: linear-gradient(135deg, #5b8cff, #63e6ff);"></span>
+          Malik Sami
+        </a>
+
+        <nav class="hidden items-center gap-5 text-sm font-semibold text-slate-100/90 md:flex" aria-label="Primary">
+          <a class="hover:text-white" href="#about">About</a>
+          <a class="hover:text-white" href="#skills">Skills</a>
+          <a class="hover:text-white" href="#projects">Projects</a>
+          <a class="hover:text-white" href="#contact">Contact</a>
+          <a class="rounded-2xl bg-gradient-to-br from-[#5b8cff] to-[#63e6ff] px-4 py-2 font-extrabold text-[#061027] hover:brightness-105" href="#contact">Hire Me</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-white/5" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel">
+          <span class="sr-only">Menu</span>
+          <span class="block h-3 w-[18px] opacity-90" style="background: linear-gradient(#fff,#fff) 0 0/100% 2px, linear-gradient(#fff,#fff) 0 50%/100% 2px, linear-gradient(#fff,#fff) 0 100%/100% 2px; background-repeat:no-repeat;"></span>
+        </button>
+      </div>
+
+      <div id="navPanel" hidden class="border-t border-white/10 bg-bg/90">
+        <div class="mx-auto grid w-[min(1100px,calc(100%-40px))] gap-2 py-3 pb-5">
+          <a class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-semibold" href="#about">About</a>
+          <a class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-semibold" href="#skills">Skills</a>
+          <a class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-semibold" href="#projects">Projects</a>
+          <a class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-semibold" href="#contact">Contact</a>
+          <a class="mt-1 w-full rounded-2xl bg-gradient-to-br from-[#5b8cff] to-[#63e6ff] px-4 py-3 text-center font-extrabold text-[#061027]" href="#contact">Hire Me</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="py-14 md:py-16">
+        <div class="mx-auto grid w-[min(1100px,calc(100%-40px))] items-center gap-6 md:grid-cols-[1.15fr_.85fr]">
+          <div>
+            <div class="inline-flex rounded-full border border-white/15 bg-white/5 px-3 py-2 text-xs font-bold text-slate-100/90">Portfolio</div>
+            <h1 class="mt-4 text-4xl font-extrabold leading-[1.05] tracking-tight md:text-5xl">
+              Hi, I’m <span class="bg-gradient-to-br from-[#5b8cff] to-[#63e6ff] bg-clip-text text-transparent">Malik Sami</span>.
+              <span class="mt-2 block text-slate-100/95">I build modern websites & apps.</span>
+            </h1>
+            <p class="mt-4 max-w-[70ch] text-slate-100/70">
+              Frontend: HTML, CSS, JavaScript, React. Backend: Node.js. I focus on clean UI, responsive design, and fast performance.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a class="rounded-2xl bg-gradient-to-br from-[#5b8cff] to-[#63e6ff] px-4 py-2 font-extrabold text-[#061027] hover:brightness-105" href="#projects">View Projects</a>
+              <a class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 font-extrabold text-white hover:bg-white/10" href="#contact">Contact</a>
+            </div>
+
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-bold text-slate-100/85">HTML</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-bold text-slate-100/85">CSS</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-bold text-slate-100/85">JavaScript</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-bold text-slate-100/85">React</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-bold text-slate-100/85">Node.js</span>
+            </div>
+          </div>
+
+          <div class="md:justify-self-end">
+            <div class="overflow-hidden rounded-[22px] border border-white/15 bg-white/5 shadow-glow">
+              <div class="flex gap-2 border-b border-white/10 px-4 py-3">
+                <span class="h-2.5 w-2.5 rounded-full bg-[#ff5f57]"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-[#febc2e]"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-[#28c840]"></span>
+              </div>
+              <div class="p-4">
+                <div class="border-b border-dashed border-white/15 py-3">
+                  <div class="text-xs font-bold text-slate-100/65">Focus</div>
+                  <div class="mt-1 font-extrabold">UI • UX • Performance</div>
+                </div>
+                <div class="border-b border-dashed border-white/15 py-3">
+                  <div class="text-xs font-bold text-slate-100/65">Stack</div>
+                  <div class="mt-1 font-extrabold">React + Node.js</div>
+                </div>
+                <div class="py-3">
+                  <div class="text-xs font-bold text-slate-100/65">Available</div>
+                  <div class="mt-1 font-extrabold">Freelance / Remote</div>
+                </div>
+
+                <div class="mt-4 grid gap-2">
+                  <div class="h-3 overflow-hidden rounded-full border border-white/10 bg-white/5"><div class="h-full w-[92%]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(99,230,255,.55));"></div></div>
+                  <div class="h-3 overflow-hidden rounded-full border border-white/10 bg-white/5"><div class="h-full w-[84%]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(99,230,255,.55));"></div></div>
+                  <div class="h-3 overflow-hidden rounded-full border border-white/10 bg-white/5"><div class="h-full w-[76%]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(99,230,255,.55));"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-14">
+        <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+          <div class="mb-6 grid gap-2">
+            <h2 class="text-3xl font-extrabold tracking-tight">About</h2>
+            <p class="max-w-[78ch] text-slate-100/70">I’m Malik Sami, a web developer who enjoys building modern, responsive websites. I like turning ideas into real products with clean design and solid code.</p>
+          </div>
+
+          <div class="grid gap-3 md:grid-cols-2">
+            <div class="rounded-[18px] border border-white/10 bg-white/5 p-5 transition hover:-translate-y-0.5 hover:border-white/20">
+              <h3 class="text-base font-extrabold">What I do</h3>
+              <p class="mt-2 text-slate-100/70">Landing pages, portfolios, business websites, dashboards, and web apps.</p>
+              <div class="mt-4 grid gap-2">
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-bold">Responsive UI design</div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-bold">Reusable components (React)</div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-bold">REST APIs (Node.js)</div>
+              </div>
+            </div>
+
+            <div class="rounded-[18px] border border-white/10 bg-white/5 p-5 transition hover:-translate-y-0.5 hover:border-white/20">
+              <h3 class="text-base font-extrabold">Tools I use</h3>
+              <p class="mt-2 text-slate-100/70">A simple workflow to ship fast and keep code maintainable.</p>
+              <div class="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 text-center text-xs font-extrabold">VS Code</div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 text-center text-xs font-extrabold">Git</div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 text-center text-xs font-extrabold">DevTools</div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 text-center text-xs font-extrabold">Figma</div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 text-center text-xs font-extrabold">Postman</div>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 text-center text-xs font-extrabold">Vite</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="border-y border-white/5 bg-bg2/70 py-14">
+        <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+          <div class="mb-6 grid gap-2">
+            <h2 class="text-3xl font-extrabold tracking-tight">Skills</h2>
+            <p class="max-w-[78ch] text-slate-100/70">My core skills and the technologies I work with.</p>
+          </div>
+
+          <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-[18px] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:border-white/20">
+              <div class="flex items-center gap-3">
+                <div class="grid h-11 w-11 place-items-center rounded-2xl font-extrabold text-[#061027]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(91,140,255,.55));">&lt;/&gt;</div>
+                <div>
+                  <div class="font-extrabold">HTML</div>
+                  <div class="text-xs font-bold text-slate-100/65">Semantic markup</div>
+                </div>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full border border-white/10 bg-white/5"><div class="h-full w-[92%]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(99,230,255,.55));"></div></div>
+            </div>
+
+            <div class="rounded-[18px] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:border-white/20">
+              <div class="flex items-center gap-3">
+                <div class="grid h-11 w-11 place-items-center rounded-2xl font-extrabold text-[#061027]" style="background: linear-gradient(135deg, rgba(99,230,255,.95), rgba(99,230,255,.55));">#</div>
+                <div>
+                  <div class="font-extrabold">CSS</div>
+                  <div class="text-xs font-bold text-slate-100/65">Responsive design</div>
+                </div>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full border border-white/10 bg-white/5"><div class="h-full w-[88%]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(99,230,255,.55));"></div></div>
+            </div>
+
+            <div class="rounded-[18px] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:border-white/20">
+              <div class="flex items-center gap-3">
+                <div class="grid h-11 w-11 place-items-center rounded-2xl font-extrabold text-[#061027]" style="background: linear-gradient(135deg, rgba(255,210,90,.95), rgba(255,210,90,.55));">JS</div>
+                <div>
+                  <div class="font-extrabold">JavaScript</div>
+                  <div class="text-xs font-bold text-slate-100/65">Modern ES6+</div>
+                </div>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full border border-white/10 bg-white/5"><div class="h-full w-[85%]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(99,230,255,.55));"></div></div>
+            </div>
+
+            <div class="rounded-[18px] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:border-white/20">
+              <div class="flex items-center gap-3">
+                <div class="grid h-11 w-11 place-items-center rounded-2xl font-extrabold text-[#061027]" style="background: linear-gradient(135deg, rgba(167,93,255,.95), rgba(167,93,255,.55));">⚛</div>
+                <div>
+                  <div class="font-extrabold">React</div>
+                  <div class="text-xs font-bold text-slate-100/65">Components & hooks</div>
+                </div>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full border border-white/10 bg-white/5"><div class="h-full w-[78%]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(99,230,255,.55));"></div></div>
+            </div>
+
+            <div class="rounded-[18px] border border-white/10 bg-white/5 p-4 transition hover:-translate-y-0.5 hover:border-white/20">
+              <div class="flex items-center gap-3">
+                <div class="grid h-11 w-11 place-items-center rounded-2xl font-extrabold text-[#061027]" style="background: linear-gradient(135deg, rgba(49,209,118,.95), rgba(49,209,118,.55));">⬢</div>
+                <div>
+                  <div class="font-extrabold">Node.js</div>
+                  <div class="text-xs font-bold text-slate-100/65">Backend & APIs</div>
+                </div>
+              </div>
+              <div class="mt-4 h-3 overflow-hidden rounded-full border border-white/10 bg-white/5"><div class="h-full w-[72%]" style="background: linear-gradient(135deg, rgba(91,140,255,.95), rgba(99,230,255,.55));"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-14">
+        <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+          <div class="mb-6 grid gap-2">
+            <h2 class="text-3xl font-extrabold tracking-tight">Projects</h2>
+            <p class="max-w-[78ch] text-slate-100/70">Replace these placeholders with your real projects anytime.</p>
+          </div>
+
+          <div class="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-[20px] border border-white/10 bg-white/5 p-4 shadow-glow transition hover:-translate-y-0.5 hover:border-white/20">
+              <div class="inline-flex rounded-full border border-white/15 bg-white/5 px-3 py-2 text-xs font-extrabold">Frontend</div>
+              <h3 class="mt-3 text-lg font-extrabold">Landing Page</h3>
+              <p class="mt-2 text-slate-100/70">A responsive landing page with animations and clean layout.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-extrabold text-slate-100/85">HTML</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-extrabold text-slate-100/85">CSS</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-extrabold text-slate-100/85">JavaScript</span>
+              </div>
+              <div class="mt-4 flex gap-2">
+                <a class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-extrabold hover:bg-white/10" href="#" aria-disabled="true">Live</a>
+                <a class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-extrabold hover:bg-white/10" href="#" aria-disabled="true">Code</a>
+              </div>
+            </article>
+
+            <article class="rounded-[20px] border border-white/10 bg-white/5 p-4 shadow-glow transition hover:-translate-y-0.5 hover:border-white/20">
+              <div class="inline-flex rounded-full border border-white/15 bg-white/5 px-3 py-2 text-xs font-extrabold">React</div>
+              <h3 class="mt-3 text-lg font-extrabold">Todo App</h3>
+              <p class="mt-2 text-slate-100/70">A simple app with filters, local storage, and reusable components.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-extrabold text-slate-100/85">React</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-extrabold text-slate-100/85">Hooks</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-extrabold text-slate-100/85">UI</span>
+              </div>
+              <div class="mt-4 flex gap-2">
+                <a class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-extrabold hover:bg-white/10" href="#" aria-disabled="true">Live</a>
+                <a class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-extrabold hover:bg-white/10" href="#" aria-disabled="true">Code</a>
+              </div>
+            </article>
+
+            <article class="rounded-[20px] border border-white/10 bg-white/5 p-4 shadow-glow transition hover:-translate-y-0.5 hover:border-white/20">
+              <div class="inline-flex rounded-full border border-white/15 bg-white/5 px-3 py-2 text-xs font-extrabold">Backend</div>
+              <h3 class="mt-3 text-lg font-extrabold">REST API</h3>
+              <p class="mt-2 text-slate-100/70">Node.js API with CRUD endpoints and validation.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-extrabold text-slate-100/85">Node.js</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py--2 text-xs font-extrabold text-slate-100/85">Express</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-extrabold text-slate-100/85">REST</span>
+              </div>
+              <div class="mt-4 flex gap-2">
+                <a class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-extrabold hover:bg-white/10" href="#" aria-disabled="true">Docs</a>
+                <a class="rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-extrabold hover:bg-white/10" href="#" aria-disabled="true">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="border-y border-white/5 bg-bg2/70 py-14">
+        <div class="mx-auto w-[min(1100px,calc(100%-40px))]">
+          <div class="mb-6 grid gap-2">
+            <h2 class="text-3xl font-extrabold tracking-tight">Contact</h2>
+            <p class="max-w-[78ch] text-slate-100/70">Send me a message. I’ll reply as soon as possible.</p>
+          </div>
+
+          <div class="grid gap-3 md:grid-cols-2">
+            <div class="rounded-[18px] border border-white/10 bg-white/5 p-5">
+              <h3 class="text-base font-extrabold">Contact details</h3>
+              <div class="mt-4 grid gap-2">
+                <a class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-bold" href="mailto:your-email@example.com">your-email@example.com</a>
+                <a class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-bold" href="tel:+920000000000">+92 000 000 0000</a>
+                <div class="rounded-2xl border border-white/10 bg-white/5 px-3 py-3 font-bold">Multan, Pakistan</div>
+              </div>
+              <div class="mt-3 text-xs font-bold text-slate-100/65">Update email/phone in the HTML to your real details.</div>
+            </div>
+
+            <form id="contactForm" class="rounded-[18px] border border-white/10 bg-white/5 p-5">
+              <label class="block">
+                <span class="text-xs font-extrabold text-slate-100/80">Name</span>
+                <input name="name" required placeholder="Your name" class="mt-2 w-full rounded-2xl border border-white/10 bg-bg/30 px-3 py-3 font-semibold text-slate-100 outline-none focus:border-[#63e6ff]/40 focus:ring-4 focus:ring-[#63e6ff]/10" />
+              </label>
+              <label class="mt-3 block">
+                <span class="text-xs font-extrabold text-slate-100/80">Email</span>
+                <input type="email" name="email" required placeholder="you@example.com" class="mt-2 w-full rounded-2xl border border-white/10 bg-bg/30 px-3 py-3 font-semibold text-slate-100 outline-none focus:border-[#63e6ff]/40 focus:ring-4 focus:ring-[#63e6ff]/10" />
+              </label>
+              <label class="mt-3 block">
+                <span class="text-xs font-extrabold text-slate-100/80">Message</span>
+                <textarea name="message" required placeholder="Write your message..." class="mt-2 min-h-[120px] w-full resize-y rounded-2xl border border-white/10 bg-bg/30 px-3 py-3 font-semibold text-slate-100 outline-none focus:border-[#63e6ff]/40 focus:ring-4 focus:ring-[#63e6ff]/10"></textarea>
+              </label>
+              <button type="submit" class="mt-4 w-full rounded-2xl bg-gradient-to-br from-[#5b8cff] to-[#63e6ff] px-4 py-3 font-extrabold text-[#061027] hover:brightness-105">Send Message</button>
+              <div id="formStatus" class="mt-3 min-h-[20px] text-xs font-bold text-slate-100/70" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button id="toTop" type="button" hidden aria-label="Scroll to top" class="fixed bottom-5 right-5 grid h-12 w-12 place-items-center rounded-2xl border border-white/15 bg-white/10 text-white shadow-glow backdrop-blur-xl transition hover:-translate-y-0.5 hover:border-[#63e6ff]/30">
+      <span aria-hidden="true">↑</span>
+    </button>
+
+    <footer class="border-t border-white/10 bg-bg2 py-8">
+      <div class="mx-auto flex w-[min(1100px,calc(100%-40px))] flex-wrap items-start justify-between gap-3">
+        <div>
+          <div class="font-extrabold">Malik Sami</div>
+          <div class="mt-1 text-xs font-bold text-slate-100/70">Built with Tailwind CSS (CDN) + JavaScript.</div>
+        </div>
+        <div class="flex flex-wrap gap-4 text-sm font-extrabold text-slate-100/85">
+          <a class="hover:text-white" href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const menuBtn = document.getElementById('menuBtn');
+        const navPanel = document.getElementById('navPanel');
+        const toTop = document.getElementById('toTop');
+
+        function setPanel(open) {
+          if (!menuBtn || !navPanel) return;
+          menuBtn.setAttribute('aria-expanded', String(open));
+          navPanel.hidden = !open;
+        }
+
+        if (menuBtn && navPanel) {
+          menuBtn.addEventListener('click', () => {
+            const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+            setPanel(!isOpen);
+          });
+
+          navPanel.addEventListener('click', (e) => {
+            const t = e.target;
+            if (t instanceof HTMLElement && t.matches('a')) setPanel(false);
+          });
+
+          window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') setPanel(false);
+          });
+
+          window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) setPanel(false);
+          });
+        }
+
+        const internalLinks = document.querySelectorAll('a[href^="#"]');
+        internalLinks.forEach((a) => {
+          a.addEventListener('click', (e) => {
+            const href = a.getAttribute('href');
+            if (!href || href === '#') return;
+            const id = href.slice(1);
+            const el = document.getElementById(id);
+            if (!el) return;
+            e.preventDefault();
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, '', href);
+          });
+        });
+
+        if (toTop) {
+          const toggle = () => {
+            toTop.hidden = window.scrollY <= 450;
+          };
+          window.addEventListener('scroll', toggle, { passive: true });
+          window.addEventListener('load', toggle);
+          toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        }
+
+        const form = document.getElementById('contactForm');
+        const status = document.getElementById('formStatus');
+        if (form && status) {
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const data = new FormData(form);
+            const name = String(data.get('name') || '').trim();
+            const email = String(data.get('email') || '').trim();
+            const msg = String(data.get('message') || '').trim();
+
+            if (!name || !email || !msg) {
+              status.textContent = 'Please fill in all fields.';
+              return;
+            }
+
+            status.textContent = 'Message ready. Add backend/email service to actually send it.';
+            form.reset();
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

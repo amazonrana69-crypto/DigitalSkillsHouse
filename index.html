@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Digital Skills House - Leading IT institute in Multan. Professional IT training in Web Development, SEO, Digital Marketing, WordPress and more." />
+    <title>Digital Skills House (Simple Clone)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand__mark" aria-hidden="true">DSH</span>
+          <span class="brand__text">
+            <span class="brand__name">Digital Skills House</span>
+            <span class="brand__tag">IT Training Institute • Multan</span>
+          </span>
+        </a>
+
+        <button class="iconbtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navPanel">
+          <span class="iconbtn__lines" aria-hidden="true"></span>
+        </button>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#difference">Why Us</a>
+          <a class="nav__link" href="#programs">Programs</a>
+          <a class="nav__link" href="#contact">Contact</a>
+          <div class="social" aria-label="Social links">
+            <a class="social__link" href="https://facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-7H8v-2.88h2.44V9.8c0-2.4 1.43-3.73 3.62-3.73 1.05 0 2.14.19 2.14.19v2.36h-1.2c-1.19 0-1.56.74-1.56 1.5v1.8h2.65L16.67 15h-2.33v6.88A10 10 0 0 0 22 12Z"/>
+              </svg>
+            </a>
+            <a class="social__link" href="https://wa.me/92316676282" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .2 5.3.2 11.86c0 2.09.55 4.13 1.6 5.93L0 24l6.39-1.77a11.83 11.83 0 0 0 5.67 1.45h.01c6.56 0 11.86-5.3 11.86-11.86 0-3.17-1.23-6.15-3.41-8.34ZM12.06 21.7h-.01a9.85 9.85 0 0 1-5.02-1.38l-.36-.22-3.79 1.05 1.01-3.69-.24-.38a9.82 9.82 0 0 1-1.51-5.22C2.14 6.37 6.57 1.94 12.06 1.94c2.63 0 5.1 1.03 6.95 2.88a9.78 9.78 0 0 1 2.88 6.95c0 5.49-4.43 9.93-9.83 9.93Zm5.71-7.37c-.31-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.71.16-.21.31-.82 1.02-1.01 1.23-.19.21-.37.23-.68.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.72-.97-2.36-.26-.62-.52-.53-.71-.54l-.61-.01c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64 0 1.56 1.13 3.06 1.28 3.27.16.21 2.22 3.39 5.38 4.76.75.32 1.34.51 1.8.65.76.24 1.46.21 2.01.13.61-.09 1.86-.76 2.12-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36Z"/>
+              </svg>
+            </a>
+            <a class="social__link" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.51 4.51 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.75 6.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/>
+              </svg>
+            </a>
+          </div>
+          <a class="btn btn--primary" href="https://digitalskillshouse.pk/registration" target="_blank" rel="noreferrer">Enroll Now</a>
+        </nav>
+      </div>
+
+      <div class="navpanel" id="navPanel" hidden>
+        <div class="navpanel__inner container">
+          <a class="navpanel__link" href="#about">About</a>
+          <a class="navpanel__link" href="#difference">Why Us</a>
+          <a class="navpanel__link" href="#programs">Programs</a>
+          <a class="navpanel__link" href="#contact">Contact</a>
+          <div class="social social--panel" aria-label="Social links">
+            <a class="social__link" href="https://facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-7H8v-2.88h2.44V9.8c0-2.4 1.43-3.73 3.62-3.73 1.05 0 2.14.19 2.14.19v2.36h-1.2c-1.19 0-1.56.74-1.56 1.5v1.8h2.65L16.67 15h-2.33v6.88A10 10 0 0 0 22 12Z"/>
+              </svg>
+            </a>
+            <a class="social__link" href="https://wa.me/92316676282" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .2 5.3.2 11.86c0 2.09.55 4.13 1.6 5.93L0 24l6.39-1.77a11.83 11.83 0 0 0 5.67 1.45h.01c6.56 0 11.86-5.3 11.86-11.86 0-3.17-1.23-6.15-3.41-8.34ZM12.06 21.7h-.01a9.85 9.85 0 0 1-5.02-1.38l-.36-.22-3.79 1.05 1.01-3.69-.24-.38a9.82 9.82 0 0 1-1.51-5.22C2.14 6.37 6.57 1.94 12.06 1.94c2.63 0 5.1 1.03 6.95 2.88a9.78 9.78 0 0 1 2.88 6.95c0 5.49-4.43 9.93-9.83 9.93Zm5.71-7.37c-.31-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.71.16-.21.31-.82 1.02-1.01 1.23-.19.21-.37.23-.68.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.72-.97-2.36-.26-.62-.52-.53-.71-.54l-.61-.01c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64 0 1.56 1.13 3.06 1.28 3.27.16.21 2.22 3.39 5.38 4.76.75.32 1.34.51 1.8.65.76.24 1.46.21 2.01.13.61-.09 1.86-.76 2.12-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.36Z"/>
+              </svg>
+            </a>
+            <a class="social__link" href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-5 3.5A4.5 4.5 0 1 1 7.5 12 4.51 4.51 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.75 6.25a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/>
+              </svg>
+            </a>
+          </div>
+          <a class="btn btn--primary btn--block" href="https://digitalskillshouse.pk/registration" target="_blank" rel="noreferrer">Enroll Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero__center">
+          <p class="pill pill--hero">Best IT Institute in Multan</p>
+          <h1 class="hero__title hero__title--center">
+            <span>Leading IT Institute &amp;</span>
+            <span class="hero__accent">Your Official Partner for Tech Solutions</span>
+          </h1>
+          <p class="hero__subtitle hero__subtitle--center">
+            Transform your career with professional IT training. Expert instructors, hands-on projects, and guaranteed job placement support. Start your journey to success today!
+          </p>
+
+          <div class="hero__actions hero__actions--center">
+            <a class="btn btn--primary" href="https://digitalskillshouse.pk/registration" target="_blank" rel="noreferrer">Enroll Now</a>
+            <a class="btn btn--ghost" href="#programs">Explore Courses</a>
+          </div>
+
+          <div class="stats" aria-label="Key highlights">
+            <article class="statcard">
+              <div class="statcard__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="statcard__value">500+</div>
+              <div class="statcard__label">Students Trained</div>
+            </article>
+
+            <article class="statcard">
+              <div class="statcard__icon statcard__icon--orange" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 2v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M16 2v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M3 9h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M5 5h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="statcard__value">5+</div>
+              <div class="statcard__label">Years Experience</div>
+            </article>
+
+            <article class="statcard">
+              <div class="statcard__icon statcard__icon--green" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7h-3V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v2a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6V9a2 2 0 0 0-2-2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M16 21H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="statcard__value">95%</div>
+              <div class="statcard__label">Job Placement</div>
+            </article>
+
+            <article class="statcard">
+              <div class="statcard__icon statcard__icon--purple" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 3 2 9l10 6 10-6-10-6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 15l10 6 10-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="statcard__value">100+</div>
+              <div class="statcard__label">Clients</div>
+            </article>
+
+            <article class="statcard">
+              <div class="statcard__icon statcard__icon--pink" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 10v6M2 10v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M6 8h12a4 4 0 0 1 4 4v4H2v-4a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M9 8V6a3 3 0 1 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="statcard__value">100%</div>
+              <div class="statcard__label">Practical Training</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Why we’re the best IT training institute in Multan</h2>
+            <p class="section__desc">Empowering the next generation of IT professionals with practical training and industry-aligned curriculum.</p>
+          </div>
+
+          <div class="grid4">
+            <article class="feature">
+              <h3 class="feature__title">Expert instructors</h3>
+              <p class="feature__desc">Industry professionals with real-world experience.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">Modern curriculum</h3>
+              <p class="feature__desc">Latest technologies and best practices.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">State-of-the-art labs</h3>
+              <p class="feature__desc">Fully equipped facilities for hands-on learning.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">Recognized credentials</h3>
+              <p class="feature__desc">FBR &amp; PSEB registered training institute.</p>
+            </article>
+          </div>
+
+          <div class="address">
+            <div class="address__title">Visit us</div>
+            <div class="address__lines">
+              <div>BCG Chowk, Multan</div>
+              <div>Pracha Street, opposite Kalyar Graphics</div>
+            </div>
+            <a class="btn btn--ghost" href="https://digitalskillshouse.pk/registration" target="_blank" rel="noreferrer">Start Your Journey Today</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="difference">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">What makes us different?</h2>
+            <p class="section__desc">A simple, practical approach designed to get you skilled, confident, and employable.</p>
+          </div>
+
+          <div class="grid3">
+            <div class="tile">
+              <div class="tile__k">Prime location</div>
+              <div class="tile__v">Easy access near BCG Chowk, Multan.</div>
+            </div>
+            <div class="tile">
+              <div class="tile__k">Internship &amp; placement</div>
+              <div class="tile__v">Guidance, projects, and job support.</div>
+            </div>
+            <div class="tile">
+              <div class="tile__k">Flexible schedule</div>
+              <div class="tile__v">Convenient timings for students and professionals.</div>
+            </div>
+            <div class="tile">
+              <div class="tile__k">Affordable fees</div>
+              <div class="tile__v">Quality training with fair pricing.</div>
+            </div>
+            <div class="tile">
+              <div class="tile__k">Hands-on training</div>
+              <div class="tile__v">Build real projects to strengthen your portfolio.</div>
+            </div>
+            <div class="tile">
+              <div class="tile__k">500+ success stories</div>
+              <div class="tile__v">Learners transformed their careers with DSH.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="programs">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Popular IT training programs</h2>
+            <p class="section__desc">Choose from our most in-demand programs.</p>
+          </div>
+
+          <div class="cards">
+            <a class="course" href="https://digitalskillshouse.pk/web-development-institute-multan" target="_blank" rel="noreferrer">
+              <div class="course__title">Web Development</div>
+              <div class="course__desc">HTML, CSS, JavaScript, React, Node.js and more.</div>
+              <div class="course__cta">Learn more →</div>
+            </a>
+
+            <a class="course" href="https://digitalskillshouse.pk/seo-course-in-multan" target="_blank" rel="noreferrer">
+              <div class="course__title">SEO Course</div>
+              <div class="course__desc">Rank higher with on-page, off-page and technical SEO.</div>
+              <div class="course__cta">Learn more →</div>
+            </a>
+
+            <a class="course" href="https://digitalskillshouse.pk/mobile-app-development-course-in-multan" target="_blank" rel="noreferrer">
+              <div class="course__title">Mobile App Development</div>
+              <div class="course__desc">Build modern apps with practical development workflows.</div>
+              <div class="course__cta">Learn more →</div>
+            </a>
+
+            <a class="course" href="https://digitalskillshouse.pk/digital-marketing-course-in-multan" target="_blank" rel="noreferrer">
+              <div class="course__title">Digital Marketing</div>
+              <div class="course__desc">Campaigns, content, ads, and analytics fundamentals.</div>
+              <div class="course__cta">Learn more →</div>
+            </a>
+
+            <a class="course" href="https://digitalskillshouse.pk/wordpress-course-in-multan" target="_blank" rel="noreferrer">
+              <div class="course__title">WordPress Development</div>
+              <div class="course__desc">Create fast, responsive websites with WordPress.</div>
+              <div class="course__cta">Learn more →</div>
+            </a>
+          </div>
+
+          <div class="slider" aria-label="Highlights">
+            <div class="slider__track" id="sliderTrack">
+              <div class="slide">
+                <div class="slide__title">Hands-on Projects</div>
+                <div class="slide__desc">Build portfolio-ready work while you learn.</div>
+              </div>
+              <div class="slide">
+                <div class="slide__title">Industry Guidance</div>
+                <div class="slide__desc">Learn best practices used in real teams.</div>
+              </div>
+              <div class="slide">
+                <div class="slide__title">Career Support</div>
+                <div class="slide__desc">CV tips, interview prep, and placement guidance.</div>
+              </div>
+            </div>
+
+            <div class="slider__controls">
+              <button class="btn btn--ghost" type="button" id="prevSlide">Prev</button>
+              <div class="dots" id="sliderDots" aria-hidden="true"></div>
+              <button class="btn btn--ghost" type="button" id="nextSlide">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="container cta__inner">
+          <div>
+            <h2 class="cta__title">Ready to start your IT journey in Multan?</h2>
+            <p class="cta__desc">Join 500+ successful students who transformed their careers with Digital Skills House.</p>
+          </div>
+          <div class="cta__actions">
+            <a class="btn btn--primary btn--block" href="https://digitalskillshouse.pk/registration" target="_blank" rel="noreferrer">Enroll Now</a>
+            <a class="btn btn--ghost btn--block" href="https://digitalskillshouse.pk/contact-us" target="_blank" rel="noreferrer">Call: 0316-676-282</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true">DSH</span>
+            <span class="brand__text">
+              <span class="brand__name">Digital Skills House</span>
+              <span class="brand__tag">Simple HTML/CSS/JS clone</span>
+            </span>
+          </div>
+          <div class="footer__small">This is a lightweight static recreation for practice/demo purposes.</div>
+        </div>
+
+        <div class="footer__links">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#contact">Contact</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
